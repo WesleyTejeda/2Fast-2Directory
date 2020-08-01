@@ -1,0 +1,94 @@
+{
+    "characters": [
+        {
+            "name": "Brian O`Connor",
+            "character-role": "Street Racer, Undercover",
+            "car-make": "Nissan",
+            "car-model" : "Skyline GT-R R34",
+            "car-year" : "1999",
+            "car-status": "Impounded",
+            "image": "../../../public/images/Brian.jpg"
+        },
+        {
+            "name": "Roman Pearce",
+            "character-role": "Demolition Derby, Street Racer, Undercover",
+            "car-make": "Chevrolet ",
+            "car-model" : "Monte Carlo",
+            "car-year" : "1970",
+            "car-status": "Damaged",
+            "image": "../../../public/images/Roman.jpg"
+        },
+        {
+            "name": "Suki",
+            "character-role": "Street Racer",
+            "car-make": "Honda",
+            "car-model" : "S2000",
+            "car-year" : "2000",
+            "car-status": "Active",
+            "image": "../../../public/images/Suki.jpg"
+        },
+        {
+            "name": "Slap Jack",
+            "character-role": "Street Racer",
+            "car-make": "Toyota",
+            "car-model" : "Supra Turbo MK IV",
+            "car-year" : "1993",
+            "car-status": "Repaired",
+            "image": "../../../public/images/SlapJack.jpg"
+        },
+        {
+            "name": "Orange Julius",
+            "character-role": "Street Racer",
+            "car-make": "Mazda",
+            "car-model" : "RX-7",
+            "car-year" : "1993",
+            "car-status": "Repaired",
+            "image": "../../../public/images/OrangeJulius.jpg"
+        },
+        {
+            "name": "Tej Parker",
+            "character-role": "Garage Owner",
+            "car-make": "Acura",
+            "car-model" : "NSX",
+            "car-year" : "2000",
+            "car-status": "Active",
+            "image": "../../../public/images/Tej.jpg"
+        },
+        {
+            "name": "Korpi AKA 'Fonzie'",
+            "character-role": "Thug, Street Racer",
+            "car-make": "Yenko",
+            "car-model" : "Camaro SYC",
+            "car-year" : "1969",
+            "car-status": "Impounded",
+            "image": "../../../public/images/Korpi.jpg"
+        },
+        {
+            "name": "Darden",
+            "character-role": "Thug, Street Racer",
+            "car-make": "Dodge",
+            "car-model" : "Challenger R/T",
+            "car-year" : "1970",
+            "car-status": "Impounded",
+            "image": "../../../public/images/Darden.jpg"
+        },
+        {
+            "name": "Carter Verone",
+            "character-role": "Drug Lord",
+            "car-make": "Ferrari",
+            "car-model" : "360 Spider",
+            "car-year" : "1999",
+            "car-status": "Impounded",
+            "image": "../../../public/images/CarterVerone.jpg"
+        },
+        {
+            "name": "Agent Markham",
+            "character-role": "FBI Agent",
+            "car-make": "Ford",
+            "car-model" : "Crown Victoria",
+            "car-year" : "1992",
+            "car-status": "Active",
+            "image": "../../../public/images/AgentMarkham.jpg"
+        }
+    ]
+}
