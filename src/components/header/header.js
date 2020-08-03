@@ -4,9 +4,9 @@ export default function Header() {
     return (
         <form className="text-center">
             <label>
+                <span>Search: </span>
                 <input type="text" name="name" />
             </label>
-            <input type="submit" value="Submit" />
         </form>
     )
 }
