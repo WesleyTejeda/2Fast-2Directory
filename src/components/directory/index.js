@@ -1,3 +1,3 @@
-import Directory from './nav.js'
+import Directory from './directory.js'
 
-export default Nav
+export default Directory

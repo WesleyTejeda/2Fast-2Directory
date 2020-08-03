@@ -1,3 +1,3 @@
-import Header from './nav.js'
+import Header from './header.js'
 
 export default Header
