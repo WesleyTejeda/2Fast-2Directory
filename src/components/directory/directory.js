@@ -18,7 +18,7 @@ export default function Directory() {
                     return (
                         <tr>
                             <td>
-                                {/* <image src={require(person.image)}/> */}
+                                <img alt={person.name} src={`https://drive.google.com/thumbnail?id=${person.image}`}/>
                                 </td>
                             <td>{person.name}</td>
                             <td>{person.role}</td>

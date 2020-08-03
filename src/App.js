@@ -6,7 +6,6 @@ import Header from './components/header';
 import Directory from './components/directory';
 
 function App() {
-  console.log(JSON)
   return (
     <>
     <Nav />
