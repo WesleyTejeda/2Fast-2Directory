@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import { render } from "@testing-library/react";
-const JSON = require("../../JSON/characters.json");
 
 export default class Directory extends Component {
-    state = {
-        JSON
-    }
-
-    
 
     render() {
         return (
             <div className="container text-center">
                 <table style={{width:"100%"}}>
+                    <tbody>
                     <tr>
                         <th>Image</th>
                         <th>Name</th>
@@ -22,7 +17,7 @@ export default class Directory extends Component {
                         <th>Year</th>
                         <th>Car Status</th>
                     </tr>
-                    {JSON.map(person => {
+                    {this.props.JSON.map(person => {
                         return (
                             <tr>
                                 <td>
@@ -37,6 +32,7 @@ export default class Directory extends Component {
                             </tr>
                             )
                     })}
+                    </tbody>
                 </table>
             </div>
         );
