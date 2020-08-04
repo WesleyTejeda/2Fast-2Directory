@@ -8,17 +8,11 @@ const JSON = require("./JSON/characters.json");
 
 
 class App extends Component {
-    constructor () {
-      super();
-      this.handleInputChange = this.handleInputChange.bind(this);
-    }
-
     state = {
       query: "",
       JSON
     }
   
-
     handleInputChange = value => {
       this.setState({
           query: value
