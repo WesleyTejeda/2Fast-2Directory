@@ -19,12 +19,16 @@ class App extends Component {
       });
     }
 
+    updateJSON = (value) => {
+      this.setState({ JSON: value})
+    }
+
   render() {
     return (
       <>
       <Nav />
       <Header query={this.state.query} handleInputChange={this.handleInputChange}/>
-      <Directory query={this.state.query} JSON={this.state.JSON} />
+      <Directory query={this.state.query} JSON={this.state.JSON} updateJSON={this.updateJSON} />
         </>
     );
   } 
