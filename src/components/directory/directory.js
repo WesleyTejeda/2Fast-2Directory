@@ -3,6 +3,18 @@ import { render } from "@testing-library/react";
 
 export default class Directory extends Component {
 
+    filterResults = (JSON, query) => {
+
+        return JSON.filter(person => 
+            (person.name.toLowerCase().includes(query) || 
+            person.role.toLowerCase().includes(query) || 
+            person.make.toLowerCase().includes(query) || 
+            person.model.toLowerCase().includes(query) || 
+            person.year.toLowerCase().includes(query) || 
+            person.status.toLowerCase().includes(query))
+        );
+    }
+
     render() {
         return (
             <div className="container text-center">
@@ -17,7 +29,7 @@ export default class Directory extends Component {
                         <th>Year</th>
                         <th>Car Status</th>
                     </tr>
-                    {this.props.JSON.map(person => {
+                    {this.filterResults(this.props.JSON, this.props.query.toLowerCase()).map(person => {
                         return (
                             <tr>
                                 <td>

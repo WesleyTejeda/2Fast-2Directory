@@ -1,30 +1,24 @@
 import React, { Component } from "react";
 
 export default class Header extends Component {
-    state = {
-        query: this.props.state.query
+    state= {
+        query: this.props.query
     }
-      
-    handleInputChange = event => {
-    console.log(event.target);
-    this.setState({
-        [event.target.name]: event.target.value
-    });
-    }
-    
-    
-    handleSubmit = event => {
-    event.preventDefault();
-    };
+
+     updateQuery = event => {
+         this.setState({query: event.target.value})
+         console.log(event.target.value)
+         this.props.handleInputChange(event.target.value);
+     }
 
     render() {
-    return (
-        <form className="text-center form">
-            <label>
-                <span>Search: </span>
-                <input type="text" name="query" placeholder="Search any column" value={this.state.query} onChange={this.handleInputChange} />
-            </label>
-        </form>
-    )
+        return (
+            <form className="text-center form">
+                <label>
+                    <span>Search: </span>
+                    <input type="text" name="query" placeholder="Search any column" value={this.state.query} onChange={this.updateQuery} />
+                </label>
+            </form>
+        )
     }
 }

@@ -8,17 +8,29 @@ const JSON = require("./JSON/characters.json");
 
 
 class App extends Component {
-  state = {
+    constructor () {
+      super();
+      this.handleInputChange = this.handleInputChange.bind(this);
+    }
+
+    state = {
       query: "",
       JSON
-  }
+    }
+  
+
+    handleInputChange = value => {
+      this.setState({
+          query: value
+      });
+    }
 
   render() {
     return (
       <>
       <Nav />
-      <Header state={this.state.query}/>
-      <Directory state={this.state.query} JSON={this.state.JSON} />
+      <Header query={this.state.query} handleInputChange={this.handleInputChange}/>
+      <Directory query={this.state.query} JSON={this.state.JSON} />
         </>
     );
   } 
