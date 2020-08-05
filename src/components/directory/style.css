@@ -1,0 +1,80 @@
+.Brian {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+.BrianImg{
+    border: 2px solid blue;
+    border-right: none;
+}
+.Roman {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+.RomanImg{
+    border: 2px solid red;
+    border-right: none;  
+}
+.Suki {
+    border-top: 2px solid pink;
+    border-bottom: 2px solid pink;
+}
+.SukiImg{
+    border: 2px solid pink;
+    border-right: none;
+}
+.Slap {
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
+.SlapImg{
+    border: 2px solid yellow;
+    border-right: none;    
+}
+.Orange {
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+.OrangeImg{
+    border: 2px solid orange;
+    border-right: none; 
+}
+.Tej {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+.TejImg{
+    border: 2px solid grey;
+    border-right: none;
+}
+.Korpi {
+    border-top: 2px solid slateblue;
+    border-bottom: 2px solid slateblue;
+}
+.KorpiImg{
+    border: 2px solid slateblue;
+    border-right: none;   
+}
+.Darden {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+.DardenImg{
+    border: 2px solid green;
+    border-right: none;    
+}
+.Carter {
+    border-top: 2px solid #660303;
+    border-bottom: 2px solid #660303;
+}
+.CarterImg{
+    border: 2px solid #660303;
+    border-right: none;   
+}
+.Agent {
+    border-top: 2px solid rgb(0, 255, 170);
+    border-bottom: 2px solid rgb(0, 255, 170);
+}
+.AgentImg{
+    border: 2px solid rgb(0, 255, 170);
+    border-right: none;
+}

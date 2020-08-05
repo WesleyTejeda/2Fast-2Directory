@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "@testing-library/react";
+import styles from "./style.css";
 
 export default class Directory extends Component {
     state = {
@@ -74,15 +75,15 @@ export default class Directory extends Component {
                         {this.filterResults(this.props.JSON, this.props.query.toLowerCase()).map(person => {
                             return (
                                 <tr>
-                                    <td>
-                                        <img alt={person.name} src={`https://drive.google.com/thumbnail?id=${person.image}`} />
+                                    <td className={person.name.split(" ")[0]+"Img"}>
+                                        <img  alt={person.name} src={`https://drive.google.com/thumbnail?id=${person.image}`} />
                                     </td>
-                                    <td>{person.name}</td>
-                                    <td>{person.role}</td>
-                                    <td>{person.make}</td>
-                                    <td>{person.model}</td>
-                                    <td>{person.year}</td>
-                                    <td>{person.status}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.name}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.role}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.make}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.model}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.year}</td>
+                                    <td className={person.name.split(" ")[0]}>{person.status}</td>
                                 </tr>
                             )
                         })}
