@@ -61,6 +61,8 @@ export default class Directory extends Component {
     render() {
         return (
             <div className="container text-center">
+                {console.log(this.filterResults(this.props.JSON, this.props.query.toLowerCase()).length)}
+                {this.filterResults(this.props.JSON, this.props.query.toLowerCase()).length !== 1 ? 
                 <table style={{ width: "100%" }}>
                     <tbody>
                         <tr>
@@ -89,6 +91,51 @@ export default class Directory extends Component {
                         })}
                     </tbody>
                 </table>
+                : 
+                <div>
+                    <table style={{ width: "100%" }}>
+                        <tbody>
+                            <tr>
+                                <th>Image</th>
+                                <th><a href="#" onClick={() => this.sortBy("name")}>Name {this.state.nameAsc ? <i class="fas fa-sort-up"></i> :<i class="fas fa-sort-down"></i> }</a></th>
+                                <th>Role</th>
+                                <th><a href="#" onClick={() => this.sortBy("make")}>Make {this.state.makeAsc ? <i class="fas fa-sort-up"></i> :<i class="fas fa-sort-down"></i> }</a></th>
+                                <th><a href="#" onClick={() => this.sortBy("model")}>Model {this.state.modelAsc ? <i class="fas fa-sort-up"></i> :<i class="fas fa-sort-down"></i> }</a></th>
+                                <th><a href="#" onClick={() => this.sortBy("year")}>Year {!(this.state.yearAsc) ? <i class="fas fa-sort-up"></i> :<i class="fas fa-sort-down"></i> }</a></th>
+                                <th><a href="#" onClick={() => this.sortBy("status")}>Car Status {this.state.statusAsc ? <i class="fas fa-sort-up"></i> :<i class="fas fa-sort-down"></i> }</a></th>
+                            </tr>
+                            {this.filterResults(this.props.JSON, this.props.query.toLowerCase()).map(person => {
+                                return (
+                                    <tr>
+                                        <td className={person.name.split(" ")[0]+"Img"}>
+                                            <img style={{ Width: "157px;"}} alt={person.name} src={`https://drive.google.com/thumbnail?id=${person.image}`} />
+                                        </td>
+                                        <td className={person.name.split(" ")[0]}>{person.name}</td>
+                                        <td className={person.name.split(" ")[0]}>{person.role}</td>
+                                        <td className={person.name.split(" ")[0]}>{person.make}</td>
+                                        <td className={person.name.split(" ")[0]}>{person.model}</td>
+                                        <td className={person.name.split(" ")[0]}>{person.year}</td>
+                                        <td className={person.name.split(" ")[0]}>{person.status}</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
+                    {this.filterResults(this.props.JSON, this.props.query.toLowerCase()).map(person => {
+                            return (
+                                <div className={person.name.split(" ")[0]+"Bio"}>
+                                    <h3 style={{ textAlign: "left", color: "white"}}>Bio</h3>
+                                    <div className="Bio">
+                                        <p>
+                                            <img alt={person.name+"'s car"} style={{ float: "right", marginBottom: "20px"}} src={`https://drive.google.com/thumbnail?id=${person.carImg}`} />
+                                            {person.bio}
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                </div>
+            }
             </div>
         );
     }
