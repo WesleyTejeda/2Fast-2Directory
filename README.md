@@ -3,7 +3,7 @@ By ```Wesley Tejeda``` <br>
 Repository Link: https://github.com/WesleyTejeda/2Fast-2Directory <br>
 Deployed Link: https://wesleytejeda.github.io/2Fast-2Directory/
 ## Demo
-<img alt="Demo of Directory App" src="" style="width: 100%"/>
+<img alt="Demo of Directory App" src="./public/images/directory-demo.gif"/>
 
 ## Description
 In this repository I've created directory based on the movie 2 Fast 2 Furious that's build using react. It features an interactive searchbar that filters results by the user's search query. If your query brings back only 1 result then you will be able to view more information regarding that character.
